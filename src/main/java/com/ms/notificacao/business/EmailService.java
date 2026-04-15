@@ -30,7 +30,7 @@ public class EmailService {
     private String nomeRemetente;
 
     public void enviaEmail(TarefasDTO dto){
-
+        //configuração  para setar valores das variaveis do email
         try{
             MimeMessage mensagem = javaMailSender.createMimeMessage();
             MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mensagem, true,

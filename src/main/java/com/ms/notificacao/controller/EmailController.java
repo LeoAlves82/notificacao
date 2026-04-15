@@ -18,6 +18,7 @@ public class EmailController {
     @Autowired
     private final EmailService emailService;
 
+    //metodo que envi o dto de email
     @PostMapping
     public ResponseEntity<Void> enviarEmail(@RequestBody TarefasDTO dto) {
         emailService.enviaEmail(dto);

@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 public class TarefasDTO {
-
+    //atributos dto
     private String id;
     private String nomeTarefa;
     private String descricao;
